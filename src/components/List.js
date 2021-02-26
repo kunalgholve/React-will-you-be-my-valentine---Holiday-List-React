@@ -1,13 +1,8 @@
 import React from "react";
 const List = (props) => {
 
-    return (
-        <>
-        <ol>
-            <li key={`"location${props.i}"`}> {`${props.name}`} </li>
-        </ol>
-        </>
-    );
+    //console.log('data:',name);
+    return<li key={`"location${props.i}"`}>{`${props.name}`}</li>
 };
 
 export default List;

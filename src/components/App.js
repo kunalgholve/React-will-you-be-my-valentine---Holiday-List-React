@@ -18,13 +18,12 @@ import List from './List';
     ];
   
 //console.log('dattaaa:',arrList);
-  let cnt=0;
+ // let cnt=0;
 
   const hello = (ele, i) => {
       if(ele.country==="India")
       {
-        cnt++;
-        return <List name={ele.name} i={i} cnt={cnt}/>;
+        return <List name={ele.name} i={i} />;
       }
     };
 
@@ -34,7 +33,7 @@ import List from './List';
   
     <div id="main">
         {/* Do not remove the main div */}
-        {arrList.map(hello)}
+        <ol>  {arrList.map(hello)}</ol>
 
       </div>
 
