@@ -1,12 +1,15 @@
 
 import React, { Component, useState } from "react";
 import '../styles/App.css';
+import List from './List';
 
-class App extends Component {
+/*class App extends Component {
   constructor(props) {
-    super(props)
+    super(props)*/
 
-    this.cityList = [{ name: 'Goa', country: 'India' },
+    const App=()=>{
+
+    const arrList = [{ name: 'Goa', country: 'India' },
     { name: 'Amsterdam', country: 'Netherlands' },
     { name: 'New York', country: 'USA' },
     { name: 'Darjeeling', country: 'India' },
@@ -33,17 +36,31 @@ class App extends Component {
     { name: 'Amritsar', country: 'India' },
     { name: 'Mussoorie', country: 'India' },
     { name: 'Mount Abu', country: 'India' },
-    { name: 'Tirupati', country: 'India' },
-    ]
-  }
+    { name: 'Tirupati', country: 'India' }
+    ];
+  
+//console.log('dattaaa:',arrList);
+  let cnt=0;
 
-  render() {
+  const hello = (ele, i) => {
+      if(ele.country==="India")
+      {
+        cnt++;
+        return <List name={ele.name} i={i} cnt={cnt}/>;
+      }
+    };
+
+
+
     return (
-      <div id="main">
+  
+    <div id="main">
         {/* Do not remove the main div */}
+        {arrList.map(hello)}
+
       </div>
-    )
-  }
+
+    );
 }
 
 
