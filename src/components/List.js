@@ -1,10 +1,10 @@
 import React from "react";
-const List = ({ name, i, cnt }) => {
+const List = (props) => {
 
     return (
         <>
         <ol>
-            <li key={`"location${cnt}"`}> {` ${cnt} ${name}`} </li>
+            <li key={`"location${props.i}"`}> {`${props.name}`} </li>
         </ol>
         </>
     );
