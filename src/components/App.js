@@ -14,11 +14,7 @@ import List from './List';
     { name: 'New York', country: 'USA' },
     { name: 'Darjeeling', country: 'India' },
     { name: 'Tokyo', country: 'Japan' },
-    { name: 'Lonavala', country: 'India' },
-    { name: 'Brandenburg Gate', country: 'Germany' },
-    { name: 'Reichstag Building', country: 'Germany' },
-    { name: 'Museum Island', country: 'Germany' },
-    { name: 'Munnar', country: 'India' }
+    { name: 'Lonavala', country: 'India' }
     ];
   
 //console.log('dattaaa:',arrList);
