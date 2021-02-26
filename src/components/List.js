@@ -1,10 +1,11 @@
 import React from "react";
 const List = ({ name, i, cnt }) => {
 
-    //console.log('data:',name);
     return (
         <>
+        <ol>
             <li key={`"location${cnt}"`}> {` ${cnt} ${name}`} </li>
+        </ol>
         </>
     );
 };
