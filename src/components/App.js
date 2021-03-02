@@ -13,8 +13,7 @@ import List from './List';
     { name: 'Amsterdam', country: 'Netherlands' },
     { name: 'New York', country: 'USA' },
     { name: 'Darjeeling', country: 'India' },
-    { name: 'Tokyo', country: 'Japan' },
-    { name: 'Lonavala', country: 'India' }
+    { name: 'Tokyo', country: 'Japan' }
     ];
   
 //console.log('dattaaa:',arrList);
