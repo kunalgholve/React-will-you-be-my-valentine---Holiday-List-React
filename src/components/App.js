@@ -1,7 +1,5 @@
 
 import React, { Component, useState } from "react";
-import '../styles/App.css';
-import List from './List';
 
 /*class App extends Component {
   constructor(props) {
@@ -13,12 +11,13 @@ import List from './List';
     { name: 'Amsterdam', country: 'Netherlands' },
     { name: 'New York', country: 'USA' },
     { name: 'Darjeeling', country: 'India' },
-    { name: 'Tokyo', country: 'Japan' }
+    { name: 'Tokyo', country: 'Japan' },
+    { name: 'baramati', country: 'India' }
     ];
   
 //console.log('dattaaa:',arrList);
  // let cnt=0;
-
+/*
   const hello = (ele, i) => {
       if(ele.country==="India")
       {
@@ -26,13 +25,22 @@ import List from './List';
       }
     };
 
-
+*/
 
     return (
   
     <div id="main">
         {/* Do not remove the main div */}
-        <ol>  {arrList.map(hello)}</ol>
+        <ol>{
+            arrList.map((obj,i)=>
+            {
+              if(obj.country==="India")
+              {
+              return(<li key={`"location${i}"`}>{obj.name}</li>)
+              }  
+          })
+          }
+        </ol>
 
       </div>
 
